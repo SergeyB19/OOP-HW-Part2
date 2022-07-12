@@ -4,6 +4,10 @@ public class Bicycle extends Parent {
         super(modelName, wheelsCount);
     }
 
+    public Bicycle() {
+        super();
+    }
+
 
     public void updateTyre() {
         System.out.println("Меняем покрышку");

@@ -3,6 +3,10 @@ public class Truck extends Parent {
         super(modelName, wheelsCount);
     }
 
+    public Truck() {
+        super();
+    }
+
     public void updateTyre() {
         System.out.println("Меняем покрышку");
     }

@@ -1,11 +1,8 @@
 public interface ParentInterface {
-    String getModelName();
-
-    void setModelName(String modelName);
-
-    int getWheelsCount();
-
-    void setWheelsCount(int wheelsCount);
-
-    void updateTyre();
+//    default void print(Bicycle[] bicycles) {
+//
+//        System.out.println("Меняем покрышку");
+//    }
+//    void print(Car[] cars);
+//    void print (Truck[] trucks);
 }

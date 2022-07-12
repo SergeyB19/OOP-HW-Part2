@@ -1,6 +1,12 @@
 public class Car extends Parent {
+
+
     public Car(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
+    }
+
+    public Car() {
+        super();
     }
 
     public void updateTyre() {
