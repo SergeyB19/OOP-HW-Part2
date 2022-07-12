@@ -1,6 +1,6 @@
 public abstract class Parent implements ParentInterface {
-    public String modelName;
-    public int wheelsCount;
+    private String modelName;
+    private int wheelsCount;
 
     public Parent(String modelName, int wheelsCount) {
         this.modelName = modelName;
