@@ -1,15 +1,12 @@
-public abstract class Parent implements ParentInterface {
+public abstract class Machines implements CheckMachines {
     private String modelName;
     private int wheelsCount;
 
-    public Parent(String modelName, int wheelsCount) {
+    public Machines(String modelName, int wheelsCount) {
         this.modelName = modelName;
         this.wheelsCount = wheelsCount;
     }
 
-    public Parent() {
-
-    }
 
     public String getModelName() {
         return modelName;
