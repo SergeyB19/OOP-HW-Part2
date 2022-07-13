@@ -1,12 +1,7 @@
-public class Truck extends Parent {
+public class Truck extends Machines implements CheckMachines {
     public Truck(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
     }
-
-    public Truck() {
-        super();
-    }
-
     public void updateTyre() {
         System.out.println("Меняем покрышку");
     }
@@ -17,5 +12,17 @@ public class Truck extends Parent {
 
     public void checkTrailer() {
         System.out.println("Проверяем прицеп");
+    }
+
+    @Override
+    public void check() {
+        System.out.println("Обслуживаем " + getModelName());
+        for (int i = 0; i < this.getWheelsCount(); i++) {
+            updateTyre();
+            checkEngine();
+            checkTrailer();
+
+
+        }
     }
 }
