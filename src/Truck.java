@@ -19,10 +19,8 @@ public class Truck extends Machines implements CheckMachines {
         System.out.println("Обслуживаем " + getModelName());
         for (int i = 0; i < this.getWheelsCount(); i++) {
             updateTyre();
-            checkEngine();
-            checkTrailer();
-
-
         }
+        checkEngine();
+        checkTrailer();
     }
 }
