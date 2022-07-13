@@ -19,5 +19,8 @@ public class ServiceStation {
                 bicycle.updateTyre();
             }
         }
+        public void print(CheckMachines) {
+        void check();
+        }
     }
 }
