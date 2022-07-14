@@ -29,12 +29,13 @@ public class Main {
             station.check(null, bicycle2, null);
             station.check(null, null, truck);
             station.check(null, null, truck2);
+
             ServiceStation serviceStation = new ServiceStation();
-            ServiceStation(bicycle);
-            ServiceStation(car);
-            ServiceStation(truck);
+            serviceStation.print(bicycle);
+            serviceStation.print(car);
+            serviceStation.print(truck);
+
+
         }
 
-        private static void ServiceStation(CheckMachines bicycle) {
-        }
 }
