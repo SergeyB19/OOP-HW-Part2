@@ -31,11 +31,8 @@ public class Main {
             station.check(null, null, truck2);
 
             ServiceStation serviceStation = new ServiceStation();
-            serviceStation.print(bicycle);
             serviceStation.print(car);
+            serviceStation.print(bicycle);
             serviceStation.print(truck);
-
-
         }
-
 }
