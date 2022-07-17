@@ -1,20 +1,21 @@
-public class Car extends Machines implements CheckMachines {
+public class Car extends WheelableTransport implements Servicable, Engineable {
 
 
     public Car(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
     }
+@Override
     public void updateTyre() {
-        System.out.println("Меняем покрышку");
+        System.out.println("Меняем покрышку у автомобиля");
     }
-
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
+@Override
+public void checkEngine() {
+        System.out.println("Проверяем двигатель у автомобиля");
     }
     @Override
     public void check() {
         System.out.println("Обслуживаем " + getModelName());
-        for (int i = 0; i < this.getWheelsCount(); i++) {
+        for (int i = 0; i < getWheelsCount(); i++) {
             updateTyre();
         }
         checkEngine();
